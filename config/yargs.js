@@ -6,19 +6,17 @@ const argv = require('yargs')
                             demandOption: true,
                             describe: 'Es la base de la tabla de multiplicar'
                         },
-                        'l': {
-                            alias: 'listar',
-                            type: 'boolean',
-                            default: false,
-                            demandOption: true,
-                            describe: 'Muestra la tabla en consola'
-                        },
                         'h': {
                             alias: 'hasta',
                             type: 'number',
                             default: 10,
-                            demandOption: true,
                             describe: 'Es el tamaño de la tabla'
+                        },
+                        'l': {
+                            alias: 'listar',
+                            type: 'boolean',
+                            default: false,
+                            describe: 'Muestra la tabla en consola'
                         }
                     })
                     .check((argv, options) => {
